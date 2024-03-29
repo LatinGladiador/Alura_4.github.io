@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background-aluraflix.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+
+.page-logo {
+    width: 170px;
+}
+
+.alura-latam-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.nuevo-lenguaje {
+    background-color: rgb(255 255 255 / 9%); /* Transparente */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ffffff; /* Bordes blancos */
+    margin-bottom: 20px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.nuevo-lenguaje label {
+    width: calc(33.33% - 10px); /* Ancho del 33.33% (menos el espacio entre los elementos) */
+}
+
+.nuevo-lenguaje input {
+    width: calc(66.66% - 10px); /* Ancho del 66.66% (menos el espacio entre los elementos) */
+}
+
+.nuevo-lenguaje input, 
+.nuevo-lenguaje button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.nuevo-lenguaje button {
+    background-color: rgb(218, 27, 27); /* Color de fondo del botón */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nuevo-lenguaje button:hover {
+    opacity: 0.9;
+}
+
+
+.catalog {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 100px;
+}
+
+.catalog .programming-language {
+    background-image: linear-gradient(transparent 10%, #22333f 10%, #203847 100%);
+    min-width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 10px;
+}
+
+.catalog .programming-language img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.catalog .programming-language:hover img {
+    transform: rotateY(180deg);
+}
+
+.catalog .programming-language .description {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.catalog .programming-language .btn {
+    width: 80%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(218, 27, 27);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 10px; /* Espacio adicional arriba */
+}
+
+.catalog .programming-language .btn:hover {
+    opacity: 0.9;
+}
+
+.eliminar-btn {
+    width: 80%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(218, 27, 27);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 10px; /* Espacio adicional arriba */
+}
+
+.eliminar-btn:hover {
+    opacity: 0.9;
+}
